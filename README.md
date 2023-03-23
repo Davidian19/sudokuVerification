@@ -1,4 +1,4 @@
-Documentação do Verificador de Sudoku
+Documentação do Verificador de Sudoku\n
 Este programa é um verificador de Sudoku desenvolvido em C que utiliza arquivos de texto para verificar se um tabuleiro de Sudoku está resolvido corretamente ou não. Ele utiliza a biblioteca pthread.h para criar threads que verificam as linhas, colunas e subgrades em paralelo.
 Estruturas de Dados
 O programa utiliza duas estruturas principais:
