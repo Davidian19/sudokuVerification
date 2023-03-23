@@ -1,14 +1,14 @@
-Documentação do Verificador de Sudoku\n
-Este programa é um verificador de Sudoku desenvolvido em C que utiliza arquivos de texto para verificar se um tabuleiro de Sudoku está resolvido corretamente ou não. Ele utiliza a biblioteca pthread.h para criar threads que verificam as linhas, colunas e subgrades em paralelo.
+Documentação do Verificador de Sudoku
+Este programa é um verificador de Sudoku desenvolvido em C que utiliza arquivos de texto para verificar se um tabuleiro de Sudoku está resolvido corretamente ou não. Ele utiliza a biblioteca `pthread.h` para criar threads que verificam as linhas, colunas e subgrades em paralelo.
 Estruturas de Dados
 O programa utiliza duas estruturas principais:
-struct Sudoku: armazena os tamanhos das linhas e colunas do tabuleiro.
-int matriz[max_linhas][max_colunas]: matriz que armazena os números do tabuleiro.
+`struct Sudoku`: armazena os tamanhos das linhas e colunas do tabuleiro.
+`int matriz[max_linhas][max_colunas]`: matriz que armazena os números do tabuleiro.
 Funções
 O programa possui as seguintes funções:
-void *checarLinhas(void *lines): função executada pelas threads para verificar se há números iguais na mesma linha.
-void *checarColunas(void *coluns): função executada pelas threads para verificar se há números iguais na mesma coluna.
-void *checarLinhaSubgrade(void *lines): função executada pelas threads para verificar se há números iguais na mesma subgrade.
+`void *checarLinhas(void *lines)`: função executada pelas threads para verificar se há números iguais na mesma linha.
+`void *checarColunas(void *coluns)`: função executada pelas threads para verificar se há números iguais na mesma coluna.
+`void *checarLinhaSubgrade(void *lines)`: função executada pelas threads para verificar se há números iguais na mesma subgrade.
 Fluxo do Programa
 O programa lê o arquivo de entrada e extrai as dimensões do tabuleiro e das subgrades.
 A matriz é preenchida com os números do tabuleiro lido do arquivo.
